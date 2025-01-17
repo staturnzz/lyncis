@@ -1,7 +1,7 @@
 # Lyncis
 
 #### iOS 7.1.x untethered jailbreak for 32bit devices
-*iOS 7.0-7.0.6 support will be added at a later date (untether only), the "jailbreakme" will only support iOS 7.1.x*
+*iOS 7.x support will be added later (untether only), the "jailbreakme" will only support iOS 7.1.x, use at your own risk*
 </br>
  
 # Installing:
@@ -12,10 +12,20 @@ Other install methods will be added soon, this page will be updated once those a
 2. Press "Jailbreak", your device will reboot once finished
 3. Cydia will now be on your home screen and can be used like normal
 
+If Safari crashes during the jailbreak process, this means the jailbreak has likely failed.
+You can check the reason for the failure in the crash logs for Safari. 
+These can be found from the Settings app, then `General -> About -> Diagnostics and Usage -> Diagnostics and Usage`.
+
 #### Migrating from Pangu/evasi0n7:
 1. Open Cydia and add the following repo: http://lyncisjb.com/repo
 2. Install "Lyncis Untether" from the repo (remove old untether package first)
 3. Reboot your device
+
+# Other Info:
+- Source code for the jailbreakme, site, and repo can be found [here](https://github.com/staturnzz/lyncis_site)
+- If you have any issues, please create a new issue on this repo
+
+
 
 
 # Credits:
