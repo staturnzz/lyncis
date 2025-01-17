@@ -1,0 +1,9 @@
+Package: com.staturnz.lyncis.untether
+Name: Lyncis Untether
+Version: REPLACE_VERSION
+Architecture: iphoneos-arm
+Maintainer: staturnz
+Author: Staturnz
+Section: Untether
+Priority: optional
+Description: 32bit untether for iOS 7.0-7.1.2

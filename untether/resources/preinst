@@ -1,0 +1,23 @@
+#!/bin/bash
+# preinst
+
+# evasi0n7 untether files
+rm -rf /evasi0n7
+rm -rf /evasi0n7-installed
+rm -rf /System/Library/LaunchDaemons/com.evad3rs.evasi0n7.untether.plist
+
+# pangu untether files
+rm -rf /panguaxe
+rm -rf /panguaxe.installed
+rm -rf /private/var/mobile/Media/panguaxe.installed
+rm -rf /System/Library/LaunchDaemons/io.pangu.axe.untether.plist
+rm -rf /System/Library/Caches/com.apple.xpcd/xpcd_cache.ipod.dylib
+
+# other untether files
+rm -rf /System/Library/Caches/com.apple.dyld/enable-dylibs-to-override-cache
+rm -rf /System/Library/Caches/com.apple.xpcd/xpcd_cache.dylib
+rm -rf /usr/lib/libmis.dylib
+rm -rf /install.sh
+rmdir /System/Library/Caches/com.apple.xpcd
+
+exit 0
