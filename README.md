@@ -1,11 +1,13 @@
 # Lyncis
 
 #### iOS 7.1.x untethered jailbreak for 32bit devices
-*iOS 7.x support will be added later (untether only), the "jailbreakme" will only support iOS 7.1.x, use at your own risk*
+*iOS 7.x support will be added later (untether only), the "jailbreakme" will only support iOS 7.1.x*
 </br>
  
 # Installing:
-Other install methods will be added soon, this page will be updated once those are ready.
+- Other install methods will be added soon, this page will be updated once those are ready.
+- For more information on installing please refer to this [guide](https://ios.cfw.guide/using-lyncis)
+- There is no warranty with this software, so use at your own risk.
 
 #### Using Safari:
 1. Visit https://lyncisjb.com on your device
