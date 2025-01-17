@@ -100,15 +100,6 @@ int start_daemons(void) {
         }
     }
 
-
-    if (access("/usr/libexec/sandboxd", F_OK) == 0) {
-        char *args[] = {"/usr/libexec/sandboxd", NULL};
-        pid_t pid = -1;
-        int rv = posix_spawn(&pid, args[0], NULL, NULL, args, environ);
-        if (rv != 0 || pid == -1) {
-            print_log("[WARNING] failed to start sandboxd\n");
-        }
-    }
     return 0;
 }
 
@@ -116,7 +107,6 @@ int main(void) {
     print_log("[*][*][*] LYNCIS UNTETHER [*][*][*]\n");
     print_log("[LYNCIS] --> running exploit");
 
-    bool use_launchctl = false;
     kinfo = run_exploit();
     if (kinfo == NULL) goto done;
 
@@ -138,7 +128,6 @@ int main(void) {
 
     if (remount_rootfs() != 0) goto done;
     print_log("[LYNCIS] --> rootfs remounted\n");
-    use_launchctl = true;
 
     if (access("/.cydia_no_stash", F_OK) != 0) {
         if (create_file("/.cydia_no_stash", 0644, 0, 0) != 0) goto done;
