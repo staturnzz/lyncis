@@ -445,6 +445,7 @@ uint32_t find_vm_fault_enter_patch(uint32_t region, uint8_t *kdata, size_t ksize
 		return (((uintptr_t)ptr) + 0x4) - ((uintptr_t)kdata);
 	}
 
+/*
 	// ios 7.0-7.0.6
 	const uint8_t search_70[] = {
 		0xd7, 0xf8, 0x18, 0xb0, // ldr.w r11, [r7, #0x18] (T32)
@@ -457,6 +458,8 @@ uint32_t find_vm_fault_enter_patch(uint32_t region, uint8_t *kdata, size_t ksize
 	ptr = memmem(kdata, ksize, search_70, sizeof(search_70));
 	if (ptr == NULL) return 0;
 	return ((uintptr_t)ptr) - ((uintptr_t)kdata);
+*/
+	return 0;
 }
 
 uint32_t find_vm_map_protect_patch(uint32_t region, uint8_t *kdata, size_t ksize) {

@@ -143,13 +143,16 @@ int patch_kernel(kinfo_t *kinfo) {
     wk32_exec(patches->tfp0_patch, 0xbf00bf00);
     wk32_exec(patches->sandbox_call_i_can_has_debugger, 0xbf00bf00);
 
+/*
     if (rk32(patches->vm_fault_enter_patch) == 0xd10f) {
         wk32_exec(patches->vm_fault_enter_patch, 0x2201bf00);
     } else {
         wk32_exec(patches->vm_fault_enter_patch, 0x0b00f04f);
         wk16_exec(patches->vm_fault_enter_patch+0xc, 0xbf00);
     }
-    
+*/
+
+    wk32_exec(patches->vm_fault_enter_patch, 0x2201bf00);
     wk32_exec(patches->vm_map_protect_patch, 0xbf00bf00);
     wk16_exec(patches->vm_map_enter_patch, 0x29ff);
     wk32_exec(patches->csops, 0xbf00bf00);
