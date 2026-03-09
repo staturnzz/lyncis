@@ -186,10 +186,6 @@ int install_bootstrap(void) {
     }
 
     uicache();
-    create_file("/.cydia_no_stash", 0644, 0, 0);
-    create_file("/.lyncis_installed", 0644, 0, 0);
-    sync();
-
     killall("installd");
     killall("fseventsd");
     return 0;
@@ -237,7 +233,9 @@ int save_buffer(void *data, uint32_t size, const char *path) {
 }
 
 const char *detect_jailbreak(void) {
+    return NULL;
     if (access("/.lyncis_installed", F_OK) == 0) return "lyncis";
+    if (access("/.aquila_installed", F_OK) == 0) return "aquila";
     if (access("/panguaxe", F_OK) == 0 ||
         access("/panguaxe.installed", F_OK) == 0 ||
         access("/var/mobile/Media/panguaxe.installed", F_OK) == 0) return "Pangu";
