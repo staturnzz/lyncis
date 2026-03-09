@@ -233,7 +233,6 @@ int save_buffer(void *data, uint32_t size, const char *path) {
 }
 
 const char *detect_jailbreak(void) {
-    return NULL;
     if (access("/.lyncis_installed", F_OK) == 0) return "lyncis";
     if (access("/.aquila_installed", F_OK) == 0) return "aquila";
     if (access("/panguaxe", F_OK) == 0 ||
