@@ -1,7 +1,7 @@
 # Lyncis
 
 #### iOS 7.1.x untethered jailbreak for 32bit devices
-*iOS 7.x support will be added later (untether only), the "jailbreakme" will only support iOS 7.1.x*
+*iOS 7.x can be jailbroken with [aquila](https://github.com/staturnzz/aquila) instead*
 </br>
  
 # Installing:
