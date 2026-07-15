@@ -25,7 +25,7 @@ all: $(SRC)
 
 	@cp -a ./resources/libmis.dylib ./staging/usr/lib/libmis.dylib
 	@cp -a ./resources/install.sh ./staging/install.sh
-	@cp -a ./lyncis ./staging/lyncis
+	@cp -a ./resources/aquila ./staging/aquila
 	@touch ./staging/System/Library/Caches/com.apple.dyld/enable-dylibs-to-override-cache
 	@cp -a ./resources/fstab ./staging/private/etc/fstab
 	@cp -a ./resources/control ./staging/DEBIAN/control
@@ -38,7 +38,7 @@ all: $(SRC)
 	@chmod 0755 ./staging/usr/lib/libmis.dylib
 	@chmod 0755 ./staging/DEBIAN/preinst
 	@chmod 0755 ./staging/DEBIAN/postinst
-	@chmod 0777 ./staging/lyncis
+	@chmod 0777 ./staging/aquila
 	@chmod 0777 ./staging/install.sh
 
 package: clean all
