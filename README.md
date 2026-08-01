@@ -31,12 +31,12 @@ These can be found from the Settings app, then `General -> About -> Diagnostics 
 
 
 # Credits:
-- [staturnz](https://github./com/staturnzz) - jailbreak and untether
-- [kok3shidoll](https://github./com/kok3shidoll) - sock_port_legacy2, CrashHousekeeping method
-- [Clarity](https://github./com/TheRealClarity) - sock_port_legacy2
+- [staturnz](https://github.com/staturnzz) - jailbreak and untether
+- [kok3shidoll](https://github.com/kok3shidoll) - sock_port_legacy2, CrashHousekeeping method
+- [Clarity](https://github.com/TheRealClarity) - sock_port_legacy2
 - [kudima](https://github.com/kudima) - original JS exploit
 - [WanderingGlitch](https://x.com/wanderingglitch) - CVE-2018-4125
-- [Ned Williamson](https://github./com/nedwill) - CVE-2019-8605
-- [jakeajames](https://github./com/jakeajames) - original sock_port
-- [planetbeing](https://github./com/planetbeing) - ios-jailbreak-patchfinder
+- [Ned Williamson](https://github.com/nedwill) - CVE-2019-8605
+- [jakeajames](https://github.com/jakeajames) - original sock_port
+- [planetbeing](https://github.com/planetbeing) - ios-jailbreak-patchfinder
 - [HASHBANG](https://github.com/hbang) - website CSS
